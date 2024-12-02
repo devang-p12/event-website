@@ -65,7 +65,7 @@ nav .nav-links li a {
 
 /* Hero section */
 .hero {
-  background-image: url(assets/bg-img.png);
+  background-image: url(bg-img.png);
   background-blend-mode: color-dodge;
   background-size: cover;
   text-align: center;
