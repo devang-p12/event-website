@@ -1,0 +1,363 @@
+/* Basic layout styles */
+body {
+  font-family: "Poppins", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin: 0 15px;
+}
+
+nav .nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Call to action button */
+.cta {
+  background-color: #ff9900;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.cta:hover {
+  background-color: #cc7a00;
+}
+
+/* Hero section */
+.hero {
+  background-image: url(assets/bg-img.png);
+  background-blend-mode: color-dodge;
+  background-size: cover;
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.hero .cta {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+/* Event overview */
+.overview h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.event-details {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  margin: 50px;
+  font-size: 25px;
+  align-items: center;
+}
+
+.event-images {
+  height: 400px;
+}
+
+/* Registration section */
+.registration {
+  padding: 40px 20px;
+  font-size: 40px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-logo{
+  height: 200px;
+  margin: 20px;
+}
+#instagram{
+  height: 50px;
+}
+#youtube{
+  height: 50px;
+}
+#linkedin{
+  height: 50px;
+}
+#facebook{
+  height: 50px;
+}
+.social-media{
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.reg-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+
+/* Media Queries for responsiveness */
+
+/* Tablet and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav .nav-links {
+      flex-direction: column;
+      align-items: center;
+      display: none; /* Hide the menu by default */
+      width: 100%;
+      padding: 10px 0;
+      background-color: black;
+  }
+
+  nav .nav-links li {
+      margin: 10px 0;
+  }
+
+  nav .hamburger {
+      display: block;
+  }
+
+  .hero {
+      padding: 60px 20px;
+  }
+
+  .hero h1 {
+      font-size: 36px;
+  }
+
+  .hero .cta {
+      font-size: 24px;
+      padding: 15px;
+  }
+
+  .event-details {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin: 20px;
+      font-size: 18px;
+  }
+
+  .event-images {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+  }
+
+  .registration form input,
+  .registration form button {
+      width: 100%;
+      font-size: 18px;
+      margin: 10px 0;
+      padding: 12px;
+  }
+
+  footer {
+      font-size: 14px;
+  }
+  
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  header .logo {
+      font-size: 20px;
+  }
+
+  .hero h1 {
+      font-size: 28px;
+  }
+
+  .cta {
+      font-size: 20px;
+      padding: 15px 25px;
+  }
+
+  .overview h2 {
+      font-size: 30px;
+  }
+
+  .event-details {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+  }
+
+  .event-images {
+      height: 250px;
+  }
+
+  .registration form input,
+  .registration form button {
+      padding: 10px;
+      font-size: 16px;
+  }
+
+  footer {
+      font-size: 12px;
+  }
+  /* When the menu is active, display the links */
+.nav-links.active {
+  display: flex;
+}
+
+}
+
+
+
+
+
+
+/* Registration Section */
+.registration {
+  padding: 60px 20px;
+  background-color: black;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  
+}
+
+.registration h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #ff9900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.reg-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 30px;
+}
+
+.reg-form input,
+.reg-form button {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Input field focus effect */
+.reg-form input:focus {
+  border-color: #ff9900;
+  outline: none;
+  background-color: #555;
+}
+
+/* Button styles */
+.reg-form button {
+  background-color: #ff9900;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.reg-form button:hover {
+  background-color: #cc7a00;
+  transform: translateY(-2px);
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .registration h2 {
+      font-size: 28px;
+  }
+
+  .reg-form {
+      padding: 30px;
+  }
+
+  .reg-form input,
+  .reg-form button {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .registration h2 {
+      font-size: 24px;
+  }
+
+  .reg-form {
+      padding: 20px;
+  }
+
+  .reg-form input,
+  .reg-form button {
+      font-size: 14px;
+  }
+}
+
